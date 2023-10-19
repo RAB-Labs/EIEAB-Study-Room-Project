@@ -8,6 +8,8 @@
   transform: translate(-50%, -50%);
   background-color: white;
 }
+
+
 .header-div{
     background-color: #313131;
     width:800px;
@@ -18,9 +20,6 @@
 .header-image{
     width: 275px;
 }
-.header-text{
-    
-}
 
 .header-writing{
     color: white;
@@ -28,9 +27,9 @@
     font: Patua One , serif;
 }
 
-
-html{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
