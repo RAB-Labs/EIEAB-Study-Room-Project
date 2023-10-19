@@ -1,11 +1,9 @@
 .parent-box{
     width: 800px;
     height: 600px;
-    top: 100px;
-    left: 400px;
-    border-color: red;
-    border-style: solid;
-    border-width: 2px;
+    top: 20%;
+    left: 30%;
+    border: none;
     background-color: white;
     position: absolute;
 }
