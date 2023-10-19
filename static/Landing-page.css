@@ -1,15 +1,15 @@
 .parent-box{
-    width: 800px;
-    height: 600px;
-    top: 20%;
-    left: 30%;
-    border: none;
-    background-color: white;
-    position: absolute;
+   position: absolute;
+  width: 800px;
+  height: 600px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
 }
 .header-div{
     background-color: #313131;
-    position: absolute;
     width:800px;
     height:80px;
     display: flex;
@@ -26,4 +26,11 @@
     color: white;
     font-size: 20px;
     font: Patua One , serif;
+}
+
+
+html{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
