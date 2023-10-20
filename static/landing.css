@@ -1,14 +1,13 @@
-.parent-box{
-   position: absolute;
-  width: 800px;
-  height: 600px;
-  border: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-    border-radius: 30px;
-
+.parent-box {
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
 }
 
 
