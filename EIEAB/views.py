@@ -7,3 +7,6 @@ def home(request):
 
 def floor1_view(request):
     return render(request, 'floor1RoomSelect.html')
+
+def floor2_view(request):
+    return render(request, 'floor2roomselect.html')
