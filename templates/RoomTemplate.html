@@ -12,6 +12,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
 
+      <style>
+    .custom-button {
+      background-color: #CB4900; /* Set the background color */
+      color: white; /* Set the text color */
+      padding: 10px 20px; /* Set the padding */
+      font-size: 16px; /* Set the font size */
+      border: none; /* Remove the border */
+      cursor: pointer; /* Add a cursor pointer on hover */
+      border-radius: 5px; /* Add rounded corners */
+      margin-left: 20px;
+      box-shadow: 2px 2px 8px grey;
+    }
+      </style>
+
+
+
   <div class = "parent-box">
 
             <div class = "header-div">
@@ -64,9 +80,14 @@
 			  <p class = "bot-writing">Seats available: 5</p>
 		  </div>
 
-			<div class = "button-bot">
-				<button>RESERVE</button>
+			<div class = "button-bot" style="justify-content: center; display: flex; ">
+				<button type="submit" class="custom-button">RESERVE</button>
+                <form action="{% url 'floor1' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit" class="custom-button">Floor</button>
+                </form>
 			</div>
+
 		</div>
 
 
