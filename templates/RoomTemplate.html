@@ -1,8 +1,9 @@
+{% load static %}
 <!DOCTYPE HTML>
 
 <html >
     <head>
-        <link rel="stylesheet" href="RoomTemplate.css">
+        <link rel="stylesheet" href={% static 'RoomTemplate.css' %}>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
     </head>
 
 
-    <body>
+    <body style="background-image: url('{% static 'images/building-background.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 
         <!-- at this point this is the parent div that will contain all of the other smaller divs to make landing page-->
 
@@ -32,14 +33,14 @@
 				<div = class="scroll-Container">
 				  <div class = "Scroll-body">
 						<p class = "body-writing2">Features:</p>
-					  <div><img class="icon-image" src="Vector.png"> </div>
-					  <div><img class="icon2-image" src="Layer_7.png"></div>
-						<div><img class="icon3-image" src="tv icon 1.png"></div>
+					  <div><img class="icon-image" src="{% static 'images/Vector.png' %}"> </div>
+					  <div><img class="icon2-image" src= "{% static 'images/Layer_7.png' %}"></div>
+						<div><img class="icon3-image" src="{% static 'images/tv icon 1.png' %}"></div>
 				</div>
 			</div>
 
 			<div = class="imgContainer-body">
-					<img class="body-image" src="Room2200.jpg">
+					<img class="body-image" src="{% static 'images/Room2200.jpg' %}">
 			</div>
 
 			<div = class="scroll-Container">
