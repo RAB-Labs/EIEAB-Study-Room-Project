@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="{% static 'landing.css' %}">
+  <link rel="stylesheet" href="{% static 'floor2roomselect.css' %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,6 @@
       border: none; /* Remove the border */
       cursor: pointer; /* Add a cursor pointer on hover */
       border-radius: 5px; /* Add rounded corners */
-      margin-left: 20px;
     }
 
     .custom-button:hover {
@@ -55,17 +54,11 @@
       ">
     </div>
 
-    <div class="button-div" style="justify-content: center; display: flex; ">
+    <div class="button-div" style="text-align: center;">
       <form action="{% url 'home' %}" method="post">
         {% csrf_token %}
         <button type="submit" class="custom-button">Home</button>
       </form>
-        <form action="{% url 'room' %}" method="post">
-            {% csrf_token %}
-            <button type="submit" class="custom-button">
-                Room
-            </button>
-        </form>
     </div>
   </div>
 

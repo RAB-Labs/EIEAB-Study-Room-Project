@@ -13,4 +13,4 @@ def room(request):
 
 
 def floor2_view(request):
-    return render(request, 'floor2roomselect.html')
+    return render(request, 'floor2RoomSelect.html')
