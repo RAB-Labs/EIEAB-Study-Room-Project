@@ -1,0 +1,163 @@
+.parent-box{
+    position: absolute;
+   width: 800px;
+   height: 600px;
+   border: none;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: transparent;
+	 backdrop-filter: blur(5px);
+ }
+ .header-div{
+     background-color: #313131;
+     width:800px;
+     height:80px;
+     display: flex;
+
+ }
+ .header-image{
+     width: 275px;
+ }
+
+ .header-writing{
+     color: white;
+     font-size: 20px;
+     font: Patua One , serif;
+ }
+
+ body{
+	background-image: url("building.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+ }
+
+ .center-body
+ {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+	margin-bottom: 2%;
+ }
+
+ .imgContainer-body{
+	flex: 2;
+	text-align: auto;
+	margin-right: 8%;
+	margin-left: 2%;
+	display: center;
+}
+
+.scroll-Container
+{
+	flex: 1;
+	display: left;
+	align-items: center;
+	justify-content: center;
+
+}
+ .body-image{
+	max-width: 110%;
+	height: auto;
+
+}
+.Scroll-body{
+	background-color: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px 0 4px 0;
+	color: #3B3C3E;
+	font-size: 12px;
+	font-weight: bold;
+	left: -1px;
+	padding: 10px 7px 5px;
+}
+
+.Scroll-body{
+	height: 350px;
+	width: 80%;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.body-writing2{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 0%;
+  width: 50%;
+	font: Patua One , serif;
+}
+
+.icon-image
+{
+	width: 35px;
+	margin-left: 30%;
+	margin-top: 25%;
+	margin-bottom: 30%;
+}
+.icon2-image
+{
+	width: 20px;
+	margin-left: 36%;
+	margin-top: 2%;
+	margin-bottom: 25%;
+}
+.icon3-image
+{
+	width: 40px;
+	margin-left: 29%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+
+.bot-text
+{
+	color: rgb(0, 0, 0);
+     font-size: 16px;
+     font: Patua One , serif;
+}
+
+.bot-writing{
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font: Patua One , serif;
+}
+
+
+
+.button-bot
+{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 1%;
+  width: 10%;
+	color: #dd1a1a;
+}
+.Scroll{
+	background-color: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px 0 4px 0;
+	color: #3B3C3E;
+	font-size: 12px;
+	font-weight: bold;
+	left: -1px;
+	padding: 10px 7px 5px;
+}
+
+.Scroll{
+	height:120px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+
+ html{
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }

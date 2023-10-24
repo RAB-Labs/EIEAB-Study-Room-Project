@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="{% static 'floor2roomselect.css' %}">
+  <link rel="stylesheet" href="{% static 'floor1RoomSelect.css' %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
         {% csrf_token %}
         <button type="submit" class="custom-button">Home</button>
       </form>
-        <form action="{% url 'room' %}" method="post">
+        <form action="{% url 'room1' %}" method="post">
             {% csrf_token %}
             <button type="submit" class="custom-button">
                 Room

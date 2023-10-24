@@ -64,6 +64,14 @@
 
     </div>
 
+        <div class="floor3-div" style="text-align: center;">
+        <form action="{% url 'floor3' %}" method="post">
+            {% csrf_token %}
+            <button type="submit"   class="custom-button">Floor 3</button>
+        </form>
+
+    </div>
+
   </div>
 
 </body>
