@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="{% static 'landing.css' %}">
+  <link rel="stylesheet" href="{% static 'floor2roomselect.css' %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap" rel="stylesheet">
-       <style>
+
+  <style>
     .custom-button {
       background-color: #CB4900; /* Set the background color */
       color: white; /* Set the text color */
@@ -40,30 +38,28 @@
         <img class="header-image" src="{% static 'images/utrgv-logo.svg' %}">
       </div>
       <div class="header-text">
-        <p class="header-writing">EIEAB</p>
+        <p class="header-writing">EIEAB Floor 2</p>
       </div>
     </div>
 
-      <div class="Choose floor-div">
-        <p class="Choose-floor">Choose Floor</p>
 
+    <div class="body-div">
+      <img class="map" src="/static/images/map.jpg" style="
+        display: block;
+        width: 450px;
+        height: auto;
+        margin-left: auto;
+        margin-top: 5%;
+        margin-right: auto;
+      ">
     </div>
 
-      <div class="button-div" style="text-align: center;">
-        <form action="{% url 'floor1' %}" method="post">
-            {% csrf_token %}
-            <button type="submit" class="custom-button">Floor 1</button>
-        </form>
-      </div>
-
-    <div class="floor2-div" style="text-align: center;">
-        <form action="{% url 'floor2' %}" method="post">
-            {% csrf_token %}
-            <button type="submit"   class="custom-button">Floor 2</button>
-        </form>
-
+    <div class="button-div" style="text-align: center;">
+      <form action="{% url 'home' %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="custom-button">Home</button>
+      </form>
     </div>
-
   </div>
 
 </body>

@@ -10,3 +10,7 @@ def floor1_view(request):
 
 def room(request):
     return render(request, 'RoomTemplate.html')
+
+
+def floor2_view(request):
+    return render(request, 'floor2roomselect.html')
