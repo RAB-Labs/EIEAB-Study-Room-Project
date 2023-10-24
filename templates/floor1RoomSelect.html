@@ -21,6 +21,7 @@
       border: none; /* Remove the border */
       cursor: pointer; /* Add a cursor pointer on hover */
       border-radius: 5px; /* Add rounded corners */
+        margin-left: 20px;
     }
 
     .custom-button:hover {
@@ -43,6 +44,7 @@
     </div>
 
 
+
     <div class="body-div">
       <img class="map" src="/static/images/map.jpg" style="
         display: block;
@@ -54,11 +56,18 @@
       ">
     </div>
 
-    <div class="button-div" style="text-align: center;">
+
+        <div class="button-div" style="justify-content: center; display: flex; ">
       <form action="{% url 'home' %}" method="post">
         {% csrf_token %}
         <button type="submit" class="custom-button">Home</button>
       </form>
+        <form action="{% url 'room' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="custom-button">
+                Room
+            </button>
+        </form>
     </div>
   </div>
 
