@@ -82,7 +82,7 @@
 
 			<div class = "button-bot" style="justify-content: center; display: flex; ">
 				<button type="submit" class="custom-button">RESERVE</button>
-                <form action="{% url 'floor2' %}" method="post">
+                <form action="{% url 'booking' %}" method="post">
                     {% csrf_token %}
                     <button type="submit" class="custom-button">Floor</button>
                 </form>

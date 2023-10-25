@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('floor1/', views.floor1_view, name='floor1'),
     path('floor2/', views.floor2_view, name='floor2'),
-    path('room/' , views.room, name='room')
+    path('room/' , views.room, name='room'),
+    path('booking/', views.booking, name='booking')
 ]
 
