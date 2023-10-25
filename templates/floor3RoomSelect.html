@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="{% static 'floor2roomselect.css' %}">
+  <link rel="stylesheet" href="{% static 'floor3RoomSelect.css' %}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
         <img class="header-image" src="{% static 'images/utrgv-logo.svg' %}">
       </div>
       <div class="header-text">
-        <p class="header-writing">EIEAB Floor 2</p>
+        <p class="header-writing">EIEAB Floor 3 </p>
       </div>
     </div>
 
@@ -60,7 +60,7 @@
         {% csrf_token %}
         <button type="submit" class="custom-button">Home</button>
       </form>
-        <form action="{% url 'room2' %}" method="post">
+        <form action="{% url 'room3' %}" method="post">
             {% csrf_token %}
             <button type="submit" class="custom-button">
                 Room

@@ -27,13 +27,12 @@
       </style>
 
 
-
   <div class = "parent-box">
 
             <div class = "header-div">
                 <div class="image-div"> <img class="header-image" src="https://www.utrgv.edu/_files/images-2022/utrgv-logo.svg"></div>
                     <div class = "header-text">
-                        <p class = "header-writing">ROOM 2.200</p>
+                        <p class = "header-writing">ROOM 1.100</p>
                     </div>
 		</div>
     </head>
@@ -82,7 +81,7 @@
 
 			<div class = "button-bot" style="justify-content: center; display: flex; ">
 				<button type="submit" class="custom-button">RESERVE</button>
-                <form action="{% url 'floor2' %}" method="post">
+                <form action="{% url 'floor1' %}" method="post">
                     {% csrf_token %}
                     <button type="submit" class="custom-button">Floor</button>
                 </form>
