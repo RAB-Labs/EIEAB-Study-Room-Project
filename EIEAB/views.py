@@ -20,3 +20,4 @@ def room3(request):
     return render(request,'Room3Template.html')
 def floor3_view(request):
     return render(request,'floor3RoomSelect.html')
+
