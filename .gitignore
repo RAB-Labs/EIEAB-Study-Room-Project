@@ -1,2 +1,4 @@
 
 *.pyc
+EIEAB/migrations/0001_initial.py
+EIEAB/migrations/0002_userprofile_idnumber.py
