@@ -38,7 +38,7 @@
  {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	margin-top: 5%;
 	margin-bottom: 2%;
  }
@@ -46,33 +46,22 @@
  .imgContainer-body{
 	flex: 2;
 	text-align: auto;
-	margin-right: 8%;
-	margin-left: 2%;
 	display: center;
 }
 
 .scroll-Container
 {
 	flex: 1;
-	display: left;
+	display: flex;
 	align-items: center;
-	justify-content: center;
+	margin-left: 25px;
+	justify-content: space-between;
 
 }
  .body-image{
-	max-width: 110%;
+	max-width: 100%;
 	height: auto;
 
-}
-.Scroll-body{
-	background-color: #F5F5F5;
-	border: 1px solid #DDDDDD;
-	border-radius: 4px 0 4px 0;
-	color: #3B3C3E;
-	font-size: 12px;
-	font-weight: bold;
-	left: -1px;
-	padding: 10px 7px 5px;
 }
 
 .Scroll-body{
@@ -80,6 +69,13 @@
 	width: 80%;
 	overflow:scroll;
 	overflow-x:hidden;
+	background-color: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px 0 4px 0;
+	color: #3B3C3E;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 7px 5px;
 }
 
 .body-writing2{
