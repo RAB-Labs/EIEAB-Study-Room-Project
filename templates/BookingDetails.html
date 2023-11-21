@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="{% static 'BookingDetails.css' %}">
+  </head>
+  <body style="background-image: url('{% static 'images/building-background.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="parent-box">
+      <div class="header-div">
+        <div class="image-div">
+          <img class="header-image" src="{% static 'images/utrgv-logo.svg' %}">
+        </div>
+        <div class="header-text">
+          <p class="header-writing">EIEAB Booking Details</p>
+        </div>
+      </div>
+
+      <div class = "main-page">
+        <div class = "timing-details-div">
+        <p class = "timing-details">These times will be held for you until 8:18pm Thursday, October 19, 2023. If you do not complete your booking before that time, another patron may book these times.</p>
+        </div>
+        <!--This is the div that contains the item, category, from, to text -->
+
+        <div class = "item-details">
+            <div class = "item-div">
+                <p class = "item-details-text">Item</p>
+            </div>
+            <div class = "category-div">
+                <p class = "item-details-text">
+                    Category
+                </p>
+            </div>
+            <div class = "from-div">
+                <p class = "item-details-text">From</p>
+            </div>
+
+            <div class = "to-div">
+                <p class = "item-details-text">To</p>
+            </div>
+        </div>
+
+    <!--attempting to make a line separating the information between bottom and top text of category information -->
+        <hr class = "line">
+
+        <div class="details">
+          <div class="section-one-detail">
+            div 1
+          </div>
+          <div class="section-two-detail">
+            div 2
+          </div>
+          <div class="section-three-detail">
+            div 3
+          </div>
+          <div class="section-four-detail">
+            div 4
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p class="long-confirmation-text">Once you reserve a room, you will recieve an email requesting that you confirmed your reservation. If you do not confirm your reservation, your room will not be reserved</p>
+          </div>
+          <div>
+            <p class="red-confirmation-text">Please make sure to confirm your reservation!</p>
+          </div>
+        </div>
+
+        <div class="enter-name">
+          <div class="name-first-section">
+            <p class="full-name">Full Name &#42;</p>
+          </div>
+          <div class="name-second-section">
+            <input class="placeholder-first-name" type="text" placeholder="First Name">
+          </div>
+          <div class="name-third-section">
+            <input class="placeholder-last-name" type="text" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="email-section">
+          <div class="email-first-section">
+            <p  class="email">Email &#42;</p>
+          </div>
+          <div class="email-second-section">
+            <input class="placeholder-email" type="text">
+          </div>
+        </div>
+
+        <div>
+          <p  class="email-text">Enter @utrgv.edu addresses only</p>
+        </div>
+
+        <div class="id-section">
+          <div class="id-first-section">
+            <p  class="utrgv-id">UTRGV ID NUMBER &#42;</p>
+          </div>
+          <div class="id-second-section">
+            <input class="placeholder-id" type="text">
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button>Reserve</button>
+          <button>Home</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
