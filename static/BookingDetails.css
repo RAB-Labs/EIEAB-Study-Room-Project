@@ -1,0 +1,329 @@
+.parent-box {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 30px;
+}
+
+
+.header-div{
+  background-color: #313131;
+  width:800px;
+  height:80px;
+  display: flex;
+  border-radius: 30px 30px 0px 30px;
+
+}
+.header-image{
+  width: 275px;
+  border-radius: 30px 0px 0px 0px;
+}
+
+.header-writing{
+  color: white;
+  font-size: 20px;
+  font-family: Patua One , serif;
+}
+
+body {
+  background-image: url('images/building-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+}
+
+
+.Choose-floor{
+  text-align: center;
+  font-size: 27px;
+  font-family: Red Hat Display;
+  font-weight: 600;
+     margin: 20px 0px 45px 0px;
+}
+
+
+.main-page{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.timing-details-div{
+  margin-top: 10px;
+}
+
+
+.item-details{
+  height: 120px;
+}
+
+.timing-details{
+  font-size: 18px;
+  font-family: Red Hat Display;
+}
+
+.timing-details-text{
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.item-details{
+  margin-top: 5px;
+  height:20px;
+  display: flex;
+}
+
+.item-div{
+  margin-left: 20px;
+  width: 100px;
+  font-family: Red Hat Display;
+  font-weight: 600;
+}
+
+.item-details-text{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.category-div{
+  width: 230px;
+  font-family: Red Hat Display;
+  font-weight: 600;
+}
+
+.from-div{
+  width: 200px;
+  font-family: Red Hat Display;
+  font-weight: 600;
+}
+
+.line{
+  margin-top: 20px;
+}
+
+.to-div {
+  font-family: Red Hat Display;
+  font-weight: 600;
+  margin-right: 40px;
+  width: 50px;
+}
+
+.details{
+  display: flex;
+}
+
+.section-one-detail {
+  background-color: lightblue;
+  padding-left: 20px;
+  width: 100px;
+}
+
+.section-two-detail {
+  background-color: lightpink;
+  width: 230px;
+}
+
+.section-three-detail {
+  background-color: lightblue;
+  width: 201px;
+}
+
+.section-four-detail  {
+  background-color: lightpink;
+  width: 200px;
+}
+
+
+.long-confirmation-text {
+  margin-bottom: 0;
+}
+
+.red-confirmation-text {
+  color: rgb(202, 26, 26);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.confirmation-text-importance {
+  margin-top: 0;
+}
+
+.enter-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-first-section  {
+  width: 100px;
+}
+
+.full-name  {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.name-second-section {
+  width: 250px;
+}
+
+.placeholder-first-name {
+  flex: 1;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 4px;
+  width: 200px;
+}
+
+.name-third-section  {
+  width: 250px;
+}
+
+.placeholder-last-name  {
+  flex: 1;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 4px;
+  width: 200px;
+}
+
+.email-section  {
+  display: flex;
+  align-items: center;
+}
+
+.email-first-section  {
+  width: 71px;
+  padding-left: 105px;
+}
+
+.email{
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.email-second-section {
+  width: 500px
+}
+
+.placeholder-email  {
+  flex: 1;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 4px;
+  width: 450px;
+}
+
+
+.email-text{
+  margin-top: 0;
+  margin-left: 176px;
+}
+
+
+.id-section  {
+  display: flex;
+  align-items: center;
+}
+
+.id-first-section  {
+  width: 168px;
+  padding-left: 9px;
+}
+
+.utrgv-id{
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.id-second-section {
+  width: 500px
+}
+
+.placeholder-id  {
+  flex: 1;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 4px;
+  width: 450px;
+}
+
+
+.phone-section  {
+  display: flex;
+  align-items: center;
+}
+
+.phone-first-section  {
+  width: 150px;
+  padding-left: 27px;
+}
+
+.phone-number{
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.phone-second-section {
+  width: 500px
+}
+
+.placeholder-phone-number  {
+  flex: 1;
+  height: 25px;
+  padding-left: 10px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  border-radius: 4px;
+  width: 450px;
+}
+
+.buttons  {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  margin-right: 10px;
+  height: 40px;
+  background-color: rgb(203, 73, 0);
+  color:  white;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orangered;
+}

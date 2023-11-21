@@ -21,3 +21,6 @@ def room3(request):
 def floor3_view(request):
     return render(request,'floor3RoomSelect.html')
 
+def reserve_view(request):
+    return render(request,'BookingDetails.html')
+

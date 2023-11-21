@@ -24,11 +24,11 @@
 
         <div class = "item-details">
             <div class = "item-div">
-                <p class = "item-details-text">Item</p>
+                <p class = "item-details-text">Floor
             </div>
             <div class = "category-div">
                 <p class = "item-details-text">
-                    Category
+                    Room
                 </p>
             </div>
             <div class = "from-div">
@@ -103,7 +103,10 @@
 
         <div class="buttons">
           <button>Reserve</button>
-          <button>Home</button>
+            <form action="{%  url 'room2' %}" method="post">
+            {% csrf_token %}
+          <button>Back</button>
+            </form>
         </div>
       </div>
     </div>
