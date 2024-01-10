@@ -27,77 +27,119 @@
       </style>
 
 
-  <div class = "parent-box">
+ <body style="background-image: url('{% static 'images/building-background.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="parent-box">
+        <div class="header-div">
+            <img class="header-image" src="https://www.utrgv.edu/_files/images-2022/utrgv-logo.svg">
+            <p class="header-writing">ROOM 1.100</p>
+        </div>
 
-            <div class = "header-div">
-                <div class="image-div"> <img class="header-image" src="https://www.utrgv.edu/_files/images-2022/utrgv-logo.svg"></div>
-                    <div class = "header-text">
-                        <p class = "header-writing">ROOM 1.100</p>
-                    </div>
-		</div>
-    </head>
+        <div class="center-body">
+            <div class="scroll-Container">
+                <div class="Scroll-body">
+                    <img class="icon-image" src="{% static 'images/Vector.png' %}">
+                    <p class = "description-text">Whiteboard</p>
+                    <img class="icon2-image" src="{% static 'images/Layer_7.png' %}">
+                    <p class = "description-text">Charging stations</p>
+                    <img class="icon3-image" src="{% static 'images/tv icon 1.png' %}">
+                    <p class = "description-text">Television</p>
+                </div>
+            </div>
 
+            <div class="imgContainer-body">
+                <img class="body-image" src="{% static 'images/Room2200.jpg' %}">
+            </div>
+        </div>
 
-    <body style="background-image: url('{% static 'images/building-background.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-
-        <!-- at this point this is the parent div that will contain all of the other smaller divs to make landing page-->
-
-			<div class="center-body">
-
-
-				<div = class="scroll-Container">
-				  <div class = "Scroll-body">
-						<p class = "body-writing2">Features:</p>
-					  <div><img class="icon-image" src="{% static 'images/Vector.png' %}"> </div>
-					  <div><img class="icon2-image" src= "{% static 'images/Layer_7.png' %}"></div>
-						<div><img class="icon3-image" src="{% static 'images/tv icon 1.png' %}"></div>
-				</div>
-			</div>
-
-			<div = class="imgContainer-body">
-					<img class="body-image" src="{% static 'images/Room2200.jpg' %}">
-			</div>
-
-			<div = class="scroll-Container">
-				<div class = "Scroll-body">
-					<p class = "body-writing2">What do we put here??:</p>
-
-			</div>
-		</div>
-
-
-			</div>
-
-
-    </body>
-
-		<bot>
-
-
-			<div class = "Scroll">
-			<div class = "bot-text">
-			  <p class = "bot-writing">Seats available: 5</p>
-		  </div>
-
-			<div class = "button-bot" style="justify-content: center; display: flex; ">
-                 <form action="{%  url 'reserve' %}" method="post">
+        <div class="Scroll">
+            <p class="bot-writing">Seats available: 5</p>
+            <div class="button-bot">
+                <form action="{% url 'reserve' %}" method="post">
                     {% csrf_token %}
-				<button type="submit" class="custom-button">RESERVE</button>
+                    <button type="submit" class="custom-button">RESERVE</button>
                 </form>
                 <form action="{% url 'floor1' %}" method="post">
                     {% csrf_token %}
                     <button type="submit" class="custom-button">Floor</button>
                 </form>
-			</div>
+            </div>
+            <div class = "reserve-blocks">
 
-		</div>
+                    <div class="time-block-pair">
+        <p class="time-text">8:00 am</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="time-block-pair">
+        <p class="time-text">9:00 am</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+                    <div class="time-block-pair">
+        <p class="time-text">10:00 am</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="time-block-pair">
+        <p class="time-text">11:00 am</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+                    <div class="time-block-pair">
+        <p class="time-text">12:00 pm</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="time-block-pair">
+        <p class="time-text">1:00 pm</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+                    <div class="time-block-pair">
+        <p class="time-text">2:00 pm</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="time-block-pair">
+        <p class="time-text">3:00 pm</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="time-block-pair">
+        <p class="time-text">4:00 pm</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div class="time-block-pair">
+        <p class="time-text">5:00 pm</p>
+        <div class="block-container">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
 
+            </div>
 
-		</bot>
-
-
-
-
-
-
+            </div>
+        </div>
+    </div>
+</body>
 </html>

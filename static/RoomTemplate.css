@@ -6,8 +6,7 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: transparent;
-	 backdrop-filter: blur(5px);
+   background-color: #F5F5F5;
  }
  .header-div{
      background-color: #313131;
@@ -64,23 +63,28 @@
 	height: auto;
 
 }
-.Scroll-body{
-	background-color: #F5F5F5;
-	border: 1px solid #DDDDDD;
-	border-radius: 4px 0 4px 0;
-	color: #3B3C3E;
-	font-size: 12px;
-	font-weight: bold;
-	left: -1px;
-	padding: 10px 7px 5px;
+.Scroll-body {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    height: 350px;
+    overflow: scroll;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: start; /* Align items to the start of the flex container */
+    border: none;
 }
 
-.Scroll-body{
-	height: 350px;
-	width: 80%;
-	overflow:scroll;
-	overflow-x:hidden;
+.icon-image, .icon2-image, .icon3-image {
+    margin: 10px 0; /* Add margin for spacing */
+    width: auto; /* Adjust the width as needed */
 }
+
 
 .body-writing2{
 	display: block;
@@ -94,23 +98,29 @@
 .icon-image
 {
 	width: 35px;
-	margin-left: 30%;
-	margin-top: 25%;
-	margin-bottom: 30%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
 }
 .icon2-image
 {
 	width: 20px;
-	margin-left: 36%;
-	margin-top: 2%;
-	margin-bottom: 25%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	margin-left: 0%;
 }
 .icon3-image
 {
 	width: 40px;
-	margin-left: 29%;
 	margin-top: 0%;
 	margin-bottom: 0%;
+	margin-left:0;
+}
+
+.description-text{
+font-size: 14px;
+color: #1e1e1e;
+margin-bottom: 25%;
 }
 
 
@@ -147,17 +157,39 @@
 	font-weight: bold;
 	left: -1px;
 	padding: 10px 7px 5px;
+	border: none;
 }
 
-.Scroll{
-	height:120px;
-	overflow:scroll;
-	overflow-x:hidden;
+/* ... existing CSS ... */
+
+.reserve-blocks {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    padding: 10px 0; /* Add some vertical padding */
 }
 
+.time-block-pair {
+    display: inline-flex; /* Use inline-flex to allow horizontal layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the items */
+    margin-right: 8px; /* Space between each pair */
+}
 
- html{
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
- }
+.time-text {
+    margin-bottom: 5px; /* Space between time label and block container */
+}
+
+.block-container {
+    display: flex; /* Align blocks horizontally */
+}
+
+.block {
+    background-color: #A6D1B3; /* New color for blocks */
+    width: 60px; /* Double the width */
+    height: 60px; /* Double the height */
+    margin-right: 3px; /* Adjusted spacing between blocks */
+    margin-bottom: 10px; /* Spacing below each block, adjust as needed */
+}
+
+/* ... existing CSS ... */
