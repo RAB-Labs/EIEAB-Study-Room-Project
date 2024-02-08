@@ -135,11 +135,98 @@
             <div class="block"></div>
         </div>
     </div>
-<!--this is a commend -->
+<!--this is a comment -->
             </div>
 
             </div>
         </div>
     </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let blocks = document.querySelectorAll('.block');
+    let firstClickedIndex = null;
+    let secondClickedIndex = null;
+    let selectionMade = false;
+
+    function resetSelection() {
+        firstClickedIndex = null;
+        secondClickedIndex = null;
+        selectionMade = false;
+        clearSelection(blocks);
+    }
+
+    blocks.forEach((block, index) => {
+        block.addEventListener('click', function() {
+            if (!selectionMade) {
+                // First click sets the starting point
+                if (firstClickedIndex === null) {
+                    firstClickedIndex = index;
+                    block.style.backgroundColor = 'rgb(245, 159, 22)'; // Highlight starting block
+                } else {
+                    // Second click sets the end point and highlights the range
+                    secondClickedIndex = index;
+                    highlightBlocks(firstClickedIndex, secondClickedIndex, blocks);
+                    selectionMade = true;
+                }
+            } else if (index < firstClickedIndex || index > secondClickedIndex) {
+                // Extend the selection if clicked outside the current selection
+                extendSelection(index, blocks);
+            } else if (index === firstClickedIndex || index === secondClickedIndex) {
+                // Reset the selection if the start or end block is clicked again
+                resetSelection();
+            } else if (index > firstClickedIndex && index < secondClickedIndex) {
+                // Clicking within the selection deselects blocks after the clicked point
+                for (let i = index + 1; i <= secondClickedIndex; i++) {
+                    clearBlock(i, blocks);
+                }
+                secondClickedIndex = index;
+            }
+        });
+    });
+
+    function extendSelection(index, blocks) {
+        if (index > secondClickedIndex) {
+            // Extend to the right
+            for (let i = secondClickedIndex + 1; i <= index; i++) {
+                blocks[i].style.backgroundColor = 'rgb(245, 159, 22)';
+            }
+            secondClickedIndex = index;
+        } else if (index < firstClickedIndex) {
+            // Extend to the left
+            for (let i = index; i < firstClickedIndex; i++) {
+                blocks[i].style.backgroundColor = 'rgb(245, 159, 22)';
+            }
+            firstClickedIndex = index;
+        }
+        selectionMade = true; // Update the flag as the selection has been extended
+    }
+
+    function highlightBlocks(startIndex, endIndex, blocks) {
+        for (let i = startIndex; i <= endIndex; i++) {
+            blocks[i].style.backgroundColor = 'rgb(245, 159, 22)';
+        }
+    }
+
+    function clearSelection(blocks) {
+        blocks.forEach(block => {
+            block.style.backgroundColor = ''; // Clear the background color
+        });
+    }
+
+    function clearBlock(index, blocks) {
+        blocks[index].style.backgroundColor = ''; // Clear the background color of a single block
+    }
+});
+</script>
+
+
+
+
+
 </body>
+
+
+
+
 </html>
