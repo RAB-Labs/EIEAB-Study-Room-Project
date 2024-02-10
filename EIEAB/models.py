@@ -9,6 +9,6 @@ class UserProfile(AbstractBaseUser):
     idNumber = models.CharField(max_length=8, unique=False, default='None')
 
 
-class bookingRoom(AbstractBaseUser):
-    floor = models.CharField(max_length=3, unique=False, default='0')
+class bookingRoom(models.Model):
+    floor = models.CharField(max_length=3, default='0')
     room = models.CharField(max_length=255, unique=True, default='None')
