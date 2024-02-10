@@ -14,21 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600&display=swap" rel="stylesheet">
-       <style>
-    .custom-button {
-      background-color: #CB4900; /* Set the background color */
-      color: white; /* Set the text color */
-      padding: 10px 20px; /* Set the padding */
-      font-size: 16px; /* Set the font size */
-      border: none; /* Remove the border */
-      cursor: pointer; /* Add a cursor pointer on hover */
-      border-radius: 5px; /* Add rounded corners */
-    }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    .custom-button:hover {
-      background-color: orangered; /* Change the background color on hover */
-    }
-  </style>
+
 </head>
 <body style="background-image: url('{% static 'images/building-background.jpg' %}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
 
@@ -40,29 +28,64 @@
         <img class="header-image" src="{% static 'images/utrgv-logo.svg' %}">
       </div>
       <div class="header-text">
-        <p class="header-writing">EIEAB</p>
+        <p class="header-writing">EIEAB Room Reservation System</p>
       </div>
     </div>
 
-      <div class="Choose floor-div">
-        <p class="Choose-floor">Choose Floor</p>
 
-    </div>
 
-      <div class="button-div" style="text-align: center;">
+
+      <div class="slideshow-div">
+
+                      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+              <div class="carousel-inner">
+                  <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide  1"></button>
+              <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide  2"></button>
+              <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide  3"></button>
+            </div>
+                <div class="carousel-item active">
+                    <img class="slideshow" src="{% static 'images/building-background.jpg' %}" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/Room2200.jpg' %}" class="slideshow" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/Room2200.jpg' %}" class="slideshow" alt="Third slide">
+                </div>
+              </div>
+
+
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+                      </div>
+
+
+      </div>
+
+
+      <div class="floor-selection-div">
+
+        <div class="button-div" style="text-align: center;">
         <form action="{% url 'floor1' %}" method="post">
             {% csrf_token %}
             <button type="submit" class="custom-button">Floor 1</button>
         </form>
-      </div>
+        </div>
 
-    <div class="floor2-div" style="text-align: center;">
+     <div class="floor2-div" style="text-align: center;">
         <form action="{% url 'floor2' %}" method="post">
             {% csrf_token %}
             <button type="submit"   class="custom-button">Floor 2</button>
         </form>
 
-    </div>
+        </div>
 
         <div class="floor3-div" style="text-align: center;">
         <form action="{% url 'floor3' %}" method="post">
@@ -70,9 +93,40 @@
             <button type="submit"   class="custom-button">Floor 3</button>
         </form>
 
-    </div>
+     </div>
+
+      </div>
+
+      <div class="rooms-available-div">
+          <button class="custom-button" id="room-availability-button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Availability</button>
+
+      </div>
+
 
   </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Room Availablity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Modal body content goes here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>

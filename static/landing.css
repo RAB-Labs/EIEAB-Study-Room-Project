@@ -1,3 +1,9 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
 .parent-box {
     position: absolute;
     width: 800px;
@@ -19,42 +25,85 @@
     border-radius: 30px 30px 0px 30px;
 
 }
+
 .header-image{
     width: 275px;
     border-radius: 30px 0px 0px 0px;
 }
+.header-text
+{
+    margin: 0px 0px 0px 0px;
+
+}
 
 .header-writing{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Patua One , serif;
+    padding: 0px 0px 0px 70px;
 }
 
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-}
 
 .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh; /* Adjust this value to center the button vertically */
+}
+
+.slideshow-div
+{
+    position: relative;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+.slideshow
+{
+
+    height: 35vh;
+    width: 65vh;
+}
+
+
+.floor-selection-div
+{
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+}
+
+.custom-button {
+      background-color: #CB4900; /* Set the background color */
+      color: white; /* Set the text color */
+      padding: 10px 20px; /* Set the padding */
+      font-size: 16px; /* Set the font size */
+      border: none; /* Remove the border */
+      cursor: pointer; /* Add a cursor pointer on hover */
+      border-radius: 5px; /* Add rounded corners */
+    font-family: Patua One , serif;
+    transition: 0.15s
     }
-.Choose-floor{
-    text-align: center;
-    font-size: 27px;
-    font-family: Red Hat Display;
-    font-weight: 600;
-       margin: 20px 0px 45px 0px;
+
+.custom-button:hover {
+    background-color: orangered; /* Change the background color on hover */
+}
+.custom-button:active
+{
 }
 
-.floor2-div{
-    margin: 20px 0px 0px 0px;
-}
+.rooms-available-div
+{
+    display: flex;
+    justify-content: center;
 
-.floor3-div{
-    margin: 20px 0px 0px 0px;
+
+}
+#room-availability-button
+{
+    margin: 30px 0px 0px 0px;
+    padding: 10px 60px 10px 60px;
 }
