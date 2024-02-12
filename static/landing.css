@@ -13,8 +13,14 @@ h1,h2,h3,h4,h5,h6
 
 }
 
+h4{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+
+}
 a:link , h5
 {
+    display: inline;
     color: #cb4900 !important;
     text-decoration: underline;
     text-decoration-color: #cb4900 !important;
@@ -32,6 +38,7 @@ table {
 
 th, td {
   padding:  10px; /* Add some padding for better readability */
+    font-family: Patua One , serif;
 }
 
 .parent-box {

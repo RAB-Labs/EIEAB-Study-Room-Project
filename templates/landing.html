@@ -123,7 +123,7 @@
 
                    <tr>
                    {% for time_slot in time_slots %}
-                      <td>{{ time_slot|date:"g A" }} {{ time_slot|add:"30 minutes"|date:"g A" }}</td>
+                      <td>{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
 
                     {% endfor %}
                    </tr>
@@ -136,19 +136,87 @@
           <a href="{% url 'room1' %}">
           <h5>EIEAB 1.204</h5>
           </a>
+         <div class="table-container">
+
+               <table>
+                   <tbody>
+
+
+
+                   <tr>
+                   {% for time_slot in time_slots %}
+                      <td>{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
+
+                    {% endfor %}
+                   </tr>
+                   </tbody>
+               </table>
+
+           </div>
 
           <h4>Floor 2</h4>
           <a href="{% url 'room2' %}">
           <h5>EIEAB 2.203</h5>
           </a>
+         <div class="table-container">
+
+               <table>
+                   <tbody>
+
+
+
+                   <tr>
+                   {% for time_slot in time_slots %}
+                      <td>{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
+
+                    {% endfor %}
+                   </tr>
+                   </tbody>
+               </table>
+
+           </div>
           <a href="{% url 'room2' %}">
           <h5>EIEAB 2.204</h5>
           </a>
+         <div class="table-container">
+
+               <table>
+                   <tbody>
+
+
+
+                   <tr>
+                   {% for time_slot in time_slots %}
+                      <td>{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
+
+                    {% endfor %}
+                   </tr>
+                   </tbody>
+               </table>
+
+           </div>
 
           <h4>Floor 3</h4>
           <a href="{% url 'room3' %}">
           <h5>EIEAB 3.205</h5>
           </a >
+         <div class="table-container">
+
+               <table>
+                   <tbody>
+
+
+
+                   <tr>
+                   {% for time_slot in time_slots %}
+                      <td>{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
+
+                    {% endfor %}
+                   </tr>
+                   </tbody>
+               </table>
+
+           </div>
 
          </div>
 
