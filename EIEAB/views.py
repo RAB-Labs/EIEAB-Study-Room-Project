@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from django.shortcuts import render
 from .models import bookingRoom
 
@@ -5,7 +7,15 @@ roomInfo = bookingRoom()
 
 
 def home(request):
-    return render(request, 'landing.html')
+    start_time = datetime.combine(datetime.today(), datetime.min.time()).replace(hour=8)
+
+    end_time = start_time.replace(hour=23)
+
+    time_slots = []
+    while start_time <= end_time:
+        time_slots.append(start_time)
+        start_time += timedelta(minutes=30)
+    return render(request, 'landing.html', {'time_slots': time_slots})
 
 
 def floor1_view(request):
@@ -44,3 +54,5 @@ def reserve_view(request):
     if created:
         roomInfo.save()
     return render(request, 'BookingDetails.html', {'roomInfo': roomInfo})
+
+

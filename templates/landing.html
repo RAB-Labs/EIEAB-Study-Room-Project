@@ -114,6 +114,25 @@
           <a href="{% url 'room1' %}">
           <h5>EIEAB 1.203</h5>
           </a>
+           <div class="table-container">
+
+               <table>
+                   <tbody>
+
+
+
+                   <tr>
+                   {% for time_slot in time_slots %}
+                      <td>{{ time_slot|date:"g A" }} {{ time_slot|add:"30 minutes"|date:"g A" }}</td>
+
+                    {% endfor %}
+                   </tr>
+                   </tbody>
+               </table>
+
+           </div>
+
+
           <a href="{% url 'room1' %}">
           <h5>EIEAB 1.204</h5>
           </a>
@@ -134,9 +153,6 @@
          </div>
 
 
-        <div>
-
-        </div>
 
 
       </div>
