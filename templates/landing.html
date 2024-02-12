@@ -110,7 +110,7 @@
       <div class="modal-body">
         <!-- Modal body content goes here -->
          <div class="modal-body-headers">
-          <h4>Floor 1</h4>
+          <h4 style="padding:0;">Floor 1</h4>
           <a href="{% url 'room1' %}">
           <h5>EIEAB 1.203</h5>
           </a>
@@ -123,8 +123,7 @@
 
                    <tr>
                    {% for time_slot in time_slots %}
-                      <td>{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
-
+                      <td class="time-slot">{{ time_slot|date:"g:i A" }} {{ time_slot|add:"30 minutes"|date:"g:i A" }}</td>
                     {% endfor %}
                    </tr>
                    </tbody>
