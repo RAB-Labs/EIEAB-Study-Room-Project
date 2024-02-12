@@ -49,10 +49,20 @@ def room3(request):
 
 
 def reserve_view(request):
-    room_value = roomInfo.room
-    roomval, created = bookingRoom.objects.get_or_create(room=room_value)
-    if created:
-        roomInfo.save()
-    return render(request, 'BookingDetails.html', {'roomInfo': roomInfo})
 
+    if request.method == "POST":
+        # Other form processing...
 
+        # Capture the booking times from the form
+        booking_start = request.POST.get('booking_start')
+        booking_end = request.POST.get('booking_end')
+
+        # Process the booking (e.g., save to database)
+
+        # Pass the booking times to the template or handle as needed
+        context = {
+            'booking_start': booking_start,
+            'booking_end': booking_end,
+            # Include other context variables as needed
+        }
+        return render(request, 'BookingDetails.html', context)
