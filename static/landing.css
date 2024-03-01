@@ -10,11 +10,21 @@ p{
 h1,h2,h3,h4,h5,h6
 {
     font-family: Patua One , serif;
-
+    color: #4c4a4f !important;
 }
 
+
+
+h4{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: #4c4a4f !important;
+    border-top: #3B3C3E;
+
+}
 a:link , h5
 {
+    display: inline;
     color: #cb4900 !important;
     text-decoration: underline;
     text-decoration-color: #cb4900 !important;
@@ -31,7 +41,8 @@ table {
 }
 
 th, td {
-  padding:  10px; /* Add some padding for better readability */
+  padding: 10px 20px 15px 20px; /* Add some padding for better readability */
+    font-family: Patua One , serif;
 }
 
 .parent-box {
@@ -146,10 +157,34 @@ th, td {
       background-color:  #f5f5f2 !important;
 }
 
+
+
+
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #4c4a4f;/* Makes the track transparent */
+    border-radius: 50px;
+}
+.table-container::-webkit-scrollbar {
+
+    height: 8px;
+    background: transparent;
+}
+
 .table-container
 {
     overflow-x: auto;
     margin: 10px 0px 20px 0px;
+     border-collapse: separate; /* Ensure that borders are separated */
+    border-spacing:  10px; /
+}
+
+.time-slot
+{
+    background: green;
+    color: white;
+     padding:  5px  20px;
+    border-radius: 10px;
 }
 
 
